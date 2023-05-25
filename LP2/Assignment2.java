@@ -23,7 +23,6 @@ class Astars {
     public void getState() throws Exception {
 
         System.out.println("\n Enter the initial State");
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         for (int i = 0; i < 3; i++) {
             String[] values = br.readLine().split(" ");
@@ -41,10 +40,9 @@ class Astars {
         for (int i = 0; i < 3; i++) {
             String[] values = br.readLine().split(" ");
             for (int j = 0; j < 3; j++) {
-                b[i][j] = Integer.parseInt(br.readLine());
+                b[i][j] = Integer.parseInt(values[j]);
             }
         }
-
     }
 
     public void display() {
