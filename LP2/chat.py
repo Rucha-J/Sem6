@@ -75,3 +75,4 @@ def chat():
 
 # Start the chatbot
 chat()
+# gedit->ls->cd Desktop/ ->ls->chat.py
